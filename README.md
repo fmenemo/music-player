@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# Music player
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Description
+
+This is a music player that allows the folling features:
+* Selecting a song from the library (will pause audio if its playing)
+* Reset current song when clicking previous if song has been playing for 3 or more seconds.
+* Go to previous/next song
+* Auto play next song when current song reaches the end
+* Volume control
+* Dynamic colors/bars based on song
+
+No external framework/library was used, all of this is pure vanilla typescript/react with Sass.
 
 ## Available Scripts
 
