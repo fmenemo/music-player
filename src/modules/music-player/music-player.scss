@@ -1,0 +1,54 @@
+.music_player {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  &-sidebar {
+    width: calc(100% / 3);
+    max-width: 350px;
+    min-width: 250px;
+    height: 100%;
+    background: #fefefe;
+  }
+
+  &-main_content {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    color: white;
+    background-image: radial-gradient(circle, var(--secondary-color), var(--primary-color));
+    box-shadow: 0px 0px 10px 1px #aaaaaa;
+
+    &-cover {
+      &-img {
+        width: 250px;
+        height: 250px;
+        border-radius: 15%;
+      }
+    }
+
+    &-artist {
+      margin-top: 2rem;
+    }
+
+    &-player {
+      width: 100%;
+      max-width: 60%;
+
+      &-song {
+        text-align: center;
+      }
+
+      &-controls {
+        margin-top: 4rem;
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

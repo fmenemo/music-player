@@ -1,0 +1,61 @@
+.sidebar {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  // overflow: scroll;
+
+  .active {
+    background: var(--primary-color);
+    color: white;
+  }
+
+  &-title {
+    margin: 4rem 0 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  &-entries {
+    overflow: scroll;
+
+    &-entry {
+      display: flex;
+      padding: 1rem;
+      margin: 1rem 0;
+      cursor: pointer;
+
+      &-cover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-image {
+          width: 50px;
+          height: 50px;
+          border-radius: 15%;
+        }
+      }
+
+      &-additional_info {
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        margin-left: 1rem;
+
+        &-name {
+          font-size: 1rem;
+        }
+
+        &-artist {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+
+  &-volume {
+    margin-top: auto;
+    box-shadow: 0px 0px 10px 1px #aaaaaa;
+  }
+}

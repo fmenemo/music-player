@@ -1,0 +1,29 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/volume.css');
+
+.volume_control {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  align-items: center;
+
+  &-left_icon {
+    width: 50px;
+    opacity: 0.2;
+  }
+
+  &-control {
+    flex-grow: 1;
+    margin: 0 1rem;
+
+    >* {
+      width: 100%;
+      accent-color: var(--secondary-color);
+    }
+  }
+
+  &-right_icon {
+    width: 50px;
+  }
+}
