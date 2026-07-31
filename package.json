@@ -45,6 +45,7 @@
   },
   "devDependencies": {
     "@types/uuid": "^9.0.2",
+    "dependency-cruiser": "^14.1.0",
     "prettier": "^3.0.2"
   }
 }
